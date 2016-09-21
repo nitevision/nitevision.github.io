@@ -158,6 +158,29 @@ svg {
   margin-bottom: 0;
 }
 
+.emoji {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.emoji:before { 
+  position: absolute;
+  font-size: 1.2rem;
+  left: 0;
+}
+
+.emoji-lipstick:before { 
+  content: "💄";
+}
+
+.emoji-key:before { 
+  content: "🔑";
+}
+
+.emoji-fourleaf:before { 
+  content: "🍀";
+}
+
 .body-margin {
   margin: 1.25rem;
 }
