@@ -232,6 +232,14 @@ svg {
 }
 
 @media (min-width: 40em) {
+  .md-rotate3 {
+    -webkit-transform: rotate(3deg);
+  }
+
+  .md-rotate3n {
+    -webkit-transform: rotate(-3deg);
+  }
+
   .photo {
     width: 50%;
     margin: -1rem;
