@@ -3,6 +3,16 @@ html {
   color: #fffdf3;
   font-family: 'Karla', sans-serif;
   font-size: 1.25rem;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 ::-moz-selection {
@@ -17,6 +27,10 @@ html {
 
 :focus {
   outline-color: #d8d8d8;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
 }
 
 img,
@@ -39,6 +53,10 @@ svg {
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.main {
+  margin-bottom: 5rem;
 }
 
 .s-icon {
@@ -114,7 +132,6 @@ svg {
   margin-top: 2.5rem;
 }
 
-
 .mrn1 {
   margin-right: -0.5rem;
 }
@@ -169,6 +186,11 @@ svg {
 }
 
 @media (max-width: 52em) {
+  html {
+    background-size: 175%;
+    background-position-x: 50%;
+  }
+
   .sm-hide { display: none }
 
   .sm-top {
@@ -186,10 +208,12 @@ svg {
     height: 70vh;
     min-height: 20rem;
     width: 100%;
+    background: linear-gradient(transparent, #151519 75%);
   }
 
   .main {
     max-width: 31rem;
+    background: #151519;
   }
 
   .large-type {
@@ -246,9 +270,11 @@ svg {
   .main {
     width: 31rem;
     max-width: 50%;
+    margin-top: calc(100vh - 25.75rem);
+    background: linear-gradient(transparent, #151519 6%);
   }
 
   .body-margin {
-    margin: calc(100vh - 25.75rem) 5rem 3rem;
+    margin: 0 5rem 3rem;
   }
 }
