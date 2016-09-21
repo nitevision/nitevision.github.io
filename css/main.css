@@ -45,10 +45,6 @@ svg {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-.main {
-  margin-bottom: 5rem;
-}
-
 .s-icon {
   text-decoration: none;
   vertical-align: bottom;
@@ -76,17 +72,10 @@ svg {
 
 .fit { max-width: 100% }
 
-.photo {
-  margin: -1rem;
-  padding: 1rem;
-  max-width: 20rem;
-}
-
-.pictures {
+.pictures-inner {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: -1rem;
   overflow: hidden;
 }
 
@@ -175,6 +164,31 @@ svg {
   float: left;
 }
 
+@media (max-width: 40em) {
+  .pictures {
+    overflow-x: scroll;
+    position: relative;
+    bottom: 0;
+    height: 14rem;
+    overflow-y: hidden;
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pictures-inner {
+    overflow-x: scroll;
+    width: 43rem;
+    position: absolute;
+    overflow-y: hidden;
+  }
+
+  .photo {
+    width: 14rem;
+    float: left;
+  }
+
+  .photo:first-child {
+    padding-left: 0.25rem;
   }
 }
 
@@ -220,6 +234,13 @@ svg {
 @media (min-width: 40em) {
   .photo {
     width: 50%;
+    margin: -1rem;
+    padding: 1rem;
+    max-width: 20rem;
+  }
+
+  .pictures-inner {
+    margin: -1rem;
   }
 
   .md-mt0 {
@@ -257,6 +278,7 @@ svg {
     width: 31rem;
     max-width: 50%;
     margin-top: calc(100vh - 25.75rem);
+    margin-bottom: 2rem;
   }
 
   .body-margin {
