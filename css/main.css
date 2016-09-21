@@ -73,9 +73,15 @@ svg {
 .fit { max-width: 100% }
 
 .pictures-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -234,10 +240,14 @@ svg {
 @media (min-width: 40em) {
   .md-rotate3 {
     -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
 
   .md-rotate3n {
     -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 
   .photo {
