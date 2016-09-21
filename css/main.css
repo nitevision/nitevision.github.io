@@ -68,7 +68,19 @@ svg {
 
 .fit { max-width: 100% }
 
-.rounded { border-radius: 3px }
+.photo {
+  margin: -1rem;
+  padding: 1rem;
+  max-width: 20rem;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -1rem;
+  overflow: hidden;
+}
 
 .logo {
   max-width: 5rem;
@@ -195,11 +207,27 @@ svg {
   }
 }
 
-@media (min-width: 52em) {
-  .lg-hide { display: none }
+@media (min-width: 40em) {
+  .photo {
+    width: 50%;
+  }
+
+  .md-mt0 {
+    margin-top: 0;
+  }
+
+  .md-mt25 {
+    margin-top: 25%;
+  }
+
+  .md-mtn25 {
+    margin-top: -25%;
+  }
 }
 
 @media (min-width: 52em) {
+  .lg-hide { display: none }
+
   .fixed-lg {
     position: fixed;
   }
