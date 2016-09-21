@@ -148,7 +148,7 @@ svg {
 }
 
 .line {
-  border-bottom: 1px solid #737270;
+  border-bottom: 1px dashed #737270;
   margin-bottom: 0;
 }
 
