@@ -1,8 +1,9 @@
 html {
   background-color: #151519;
   color: #fffdf3;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
+  font-weight: 900;
 }
 
 ::-moz-selection {
@@ -45,18 +46,29 @@ svg {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.center {
+  text-align: center;
+}
+
+.p-my {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .s-icon {
   text-decoration: none;
   vertical-align: bottom;
-  margin: 0.25rem;
-  padding: 0.5rem;
+  margin: 0.5rem;
+  padding: 1rem;
 }
+
 .svg-icon {
   width: 16px;
   height: 16px;
   padding-bottom: 2px;
   fill: #737270;
 }
+
 .s-icon:hover .svg-icon,
 .s-icon:active .svg-icon {
   fill: #FFFDF3;
@@ -73,38 +85,25 @@ svg {
 .fit { max-width: 100% }
 
 .pictures-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow: hidden;
+}
+
+.photo {
+  float: left;
 }
 
 .logo {
   max-width: 5rem;
-}
-
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.large-type {
-  font-size: 2.9rem;
-  line-height: 4rem;
+  margin: auto;
 }
 
 .medium-type {
-  font-size: 1.2rem;
-  line-height: 2.4rem;
-  padding-bottom: 1em;
+  font-size: 2rem;
+  line-height: 3rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 .dark-type {
+  font-weight: 700;
   opacity: 0.4;
 }
 
@@ -113,8 +112,8 @@ svg {
   margin-top: 0.5rem;
 }
 
-.mt2 {
-  margin-top: 2.5rem;
+.paragraph-mb {
+  margin-bottom: 5rem;
 }
 
 .mrn1 {
@@ -125,8 +124,8 @@ svg {
   margin-bottom: 1rem;
 }
 
-.ml-social {
-  margin-left: -0.65rem;
+.social {
+  margin-bottom: 3rem;
 }
 
 .mr-link {
@@ -153,20 +152,16 @@ svg {
   opacity: 1;
 }
 
-.line {
-  border-bottom: 1px dashed #737270;
-  margin-bottom: 0;
-}
-
 .emoji {
   position: relative;
-  padding-left: 2rem;
+  padding-top: 2rem;
 }
 
 .emoji:before { 
   position: absolute;
-  font-size: 1.2rem;
+  top: 0;
   left: 0;
+  width: 100%;
 }
 
 .emoji-lipstick:before { 
@@ -193,19 +188,35 @@ svg {
   float: left;
 }
 
+@media (min-width: 40em) and  (max-width: 52em) {
+  .social {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media (max-width: 40em) {
+  .social {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .pictures {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     position: relative;
     bottom: 0;
     height: 14rem;
     overflow-y: hidden;
-    margin-left: -1rem;
-    margin-bottom: 1rem;
+    margin: 0 -1.25rem 1rem -1rem;
   }
 
   .pictures-inner {
-    overflow-x: scroll;
     width: 43rem;
     position: absolute;
     overflow-y: hidden;
@@ -235,36 +246,35 @@ svg {
     bottom: 0;
   }
 
+  .p-mb {
+    margin-bottom: 5rem;
+  }
+
   .header {
-    height: 70vh;
-    min-height: 20rem;
-    width: 100%;
+    margin: 27vh 1rem;
   }
 
   .main {
-    max-width: 31rem;
-  }
-
-  .large-type {
-    font-size: 1.7rem;
-    line-height: 3.125rem;
+    max-width: 16rem;
+    margin: auto;
   }
 
   .medium-type {
-    font-size: 0.9rem;
-    line-height: 2.125rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 
   .link-dark, .dark-type {
     font-size: 0.8rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width: 40em) {
-  .md-rotate3 {
-    -webkit-transform: rotate(3deg);
-        -ms-transform: rotate(3deg);
-            transform: rotate(3deg);
+  .md-rotate5 {
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
 
   .md-rotate3n {
@@ -273,56 +283,78 @@ svg {
             transform: rotate(-3deg);
   }
 
+  .md-rotate5n {
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
   .photo {
-    width: 50%;
-    margin: -1rem;
-    padding: 1rem;
-    max-width: 20rem;
+    width: 38.333%;
   }
 
   .pictures-inner {
-    margin: -1rem;
+    max-width: 40rem;
   }
 
-  .md-mt0 {
-    margin-top: 0;
+  .md-photo-margin-t {
+    margin-top: -3.5%;
   }
 
-  .md-mt25 {
-    margin-top: 25%;
-  }
-
-  .md-mtn25 {
-    margin-top: -25%;
+  .md-photo-margin-l {
+    margin-left: -7.5%;
   }
 }
 
 @media (min-width: 52em) {
   .lg-hide { display: none }
 
-  .fixed-lg {
-    position: fixed;
+  .lg-mb2 {
+    margin-bottom: 2.5rem;
   }
 
-  .header-fixed {
-    width: calc(50vw - 7rem);
-    bottom: 4.75rem;
+  .p-mb {
+    margin-bottom: 10rem;
   }
 
   .header {
-    height: 1px;
-    width: 31rem;
-    max-width: 50%;
+		margin: 30vh 1rem 22.5vh 1rem;
   }
 
   .main {
-    width: 31rem;
-    max-width: 50%;
-    margin-top: calc(100vh - 25.75rem);
-    margin-bottom: 2rem;
+    width: 28rem;
+    margin: 0 auto 2rem;
   }
 
   .body-margin {
     margin: 0 5rem 3rem;
+  }
+
+  .emoji {
+    position: relative;
+    padding-top: 3rem;
+  }
+
+  .social {
+    margin-top: 4rem;
+  }
+
+  .s-icon {
+    margin: 1rem;
+  }
+
+  .svg-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .pictures {
+    text-align: center;
+  }
+
+  .pictures-inner {
+    width: 52rem;
+    margin: auto;
+    margin-top: 3rem;
   }
 }
