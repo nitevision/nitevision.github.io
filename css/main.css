@@ -34,6 +34,7 @@ svg {
   content: " ";
   display: table
 }
+
 .clearfix:after { clear: both }
 
 .pointer-events { pointer-events: none; }
@@ -83,9 +84,6 @@ svg {
 }
 
 .fit { max-width: 100% }
-
-.pictures-inner {
-}
 
 .photo {
   float: left;
@@ -235,15 +233,6 @@ svg {
 @media (max-width: 52em) {
   .sm-hide { display: none }
 
-  .sm-top {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  .sm-absolute {
-    position: absolute;
-    bottom: 0;
   .logo {
     max-width: 5rem;
   }
