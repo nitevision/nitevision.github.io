@@ -51,6 +51,12 @@ svg {
   text-align: center;
 }
 
+.block { display: block }
+
+.p1y {
+  padding: 1rem 0;
+}
+
 .p-my {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -108,6 +114,14 @@ svg {
 .type-thin {
   padding-bottom: 0.5em;
   margin-top: 0.5rem;
+}
+
+.type-bold {
+  font-weight: 700;
+}
+
+.type-huge {
+  font-size: 3rem;
 }
 
 .paragraph-mb {
@@ -184,6 +198,12 @@ svg {
 
 .float-left {
   float: left;
+}
+
+.error-main {
+  max-width: 15rem;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 40em) and  (max-width: 52em) {
@@ -264,20 +284,20 @@ svg {
 @media (min-width: 40em) {
   .md-rotate5 {
     -webkit-transform: rotate(5deg);
-        -ms-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
   }
 
   .md-rotate3n {
     -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
   }
 
   .md-rotate5n {
     -webkit-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
 
   .photo {
@@ -309,7 +329,7 @@ svg {
   }
 
   .header {
-		margin: 30vh 1rem 22.5vh 1rem;
+    margin: 30vh 1rem 22.5vh 1rem;
   }
 
   .main {
