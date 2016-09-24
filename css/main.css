@@ -109,6 +109,7 @@ svg {
 .dark-type {
   font-weight: 700;
   opacity: 0.4;
+  -webkit-font-smoothing: antialiased;
 }
 
 .type-thin {
