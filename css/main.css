@@ -62,25 +62,6 @@ svg {
   margin-right: 1rem;
 }
 
-.s-icon {
-  text-decoration: none;
-  vertical-align: bottom;
-  margin: 0.5rem;
-  padding: 1rem;
-}
-
-.svg-icon {
-  width: 16px;
-  height: 16px;
-  padding-bottom: 2px;
-  fill: #737270;
-}
-
-.s-icon:hover .svg-icon,
-.s-icon:active .svg-icon {
-  fill: #FFFDF3;
-}
-
 .relative {
   position: relative;
 }
@@ -90,10 +71,6 @@ svg {
 }
 
 .fit { max-width: 100% }
-
-.photo {
-  float: left;
-}
 
 .logo {
   max-width: 7.5rem;
@@ -208,47 +185,9 @@ svg {
 }
 
 @media (min-width: 40em) and  (max-width: 52em) {
-  .social {
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-  }
-
-  .svg-icon {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 @media (max-width: 40em) {
-  .social {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .pictures {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    bottom: 0;
-    height: 14rem;
-    overflow-y: hidden;
-    margin: 0 -1.25rem 1rem -1rem;
-  }
-
-  .pictures-inner {
-    width: 43rem;
-    position: absolute;
-    overflow-y: hidden;
-  }
-
-  .photo {
-    width: 14rem;
-    float: left;
-  }
-
-  .photo:first-child {
-    padding-left: 0.25rem;
-  }
 }
 
 @media (max-width: 52em) {
@@ -283,39 +222,6 @@ svg {
 }
 
 @media (min-width: 40em) {
-  .md-rotate5 {
-    -webkit-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    transform: rotate(5deg);
-  }
-
-  .md-rotate3n {
-    -webkit-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  }
-
-  .md-rotate5n {
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-  }
-
-  .photo {
-    width: 38.333%;
-  }
-
-  .pictures-inner {
-    max-width: 40rem;
-  }
-
-  .md-photo-margin-t {
-    margin-top: -3.5%;
-  }
-
-  .md-photo-margin-l {
-    margin-left: -7.5%;
-  }
 }
 
 @media (min-width: 52em) {
@@ -340,33 +246,5 @@ svg {
 
   .body-margin {
     margin: 0 5rem 3rem;
-  }
-
-  .emoji {
-    position: relative;
-    padding-top: 3rem;
-  }
-
-  .social {
-    margin-top: 4rem;
-  }
-
-  .s-icon {
-    margin: 1rem;
-  }
-
-  .svg-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .pictures {
-    text-align: center;
-  }
-
-  .pictures-inner {
-    width: 52rem;
-    margin: auto;
-    margin-top: 3rem;
   }
 }
