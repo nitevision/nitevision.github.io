@@ -72,6 +72,12 @@ h1, h2, h3, h4, h5, p {
   background: #b9afa3;
 }
 
+.background {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .block { display: block }
 
 .p1y {
@@ -166,8 +172,8 @@ h1, h2, h3, h4, h5, p {
   margin-bottom: 1rem;
 }
 
-.mb-last {
-  margin-bottom: 5rem;
+.pb-last {
+  padding-bottom: 5rem;
 }
 
 .skewy {
@@ -224,6 +230,12 @@ h1, h2, h3, h4, h5, p {
 
   .sm-pb2 {
     padding-bottom: 2rem;
+  }
+
+  .background {
+    background-size: contain;
+    background-size: 200%;
+    background-position: 50% 50%;
   }
 }
 
@@ -285,8 +297,8 @@ h1, h2, h3, h4, h5, p {
     transform: skewY(-1deg);
   }
 
-  .mb-last {
-    margin-bottom: 10vh;
+  .pb-last {
+    padding-bottom: 10vh;
   }
 }
 
@@ -295,8 +307,8 @@ h1, h2, h3, h4, h5, p {
     width: 26rem;
   }
 
-  .mb-last {
-    margin-bottom: 20vh;
+  .pb-last {
+    padding-bottom: 20vh;
   }
 }
 
@@ -316,7 +328,7 @@ h1, h2, h3, h4, h5, p {
     margin-top: 21vh;
   }
 
-  .mb-last {
+  .pb-last {
     margin-bottom: 37vh;
   }
 }
