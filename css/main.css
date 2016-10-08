@@ -78,6 +78,17 @@ h1, h2, h3, h4, h5, p {
   background-repeat: no-repeat;
 }
 
+.devices {
+  position: absolute;
+  height: 115%;
+  min-height: 29rem;
+  max-height: 77vmax;
+  max-width: 26rem;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
 .block { display: block }
 
 .p1y {
@@ -179,14 +190,14 @@ h1, h2, h3, h4, h5, p {
 .skewy {
   -webkit-transform: skewY(2deg);
   -ms-transform: skewY(2deg);
-  transform: skewY(2deg);
+      transform: skewY(2deg);
   -webkit-backface-visibility: visible;
 }
 
 .skewyn {
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
-  transform: skewY(-2deg);
+      transform: skewY(-2deg);
   -webkit-backface-visibility: hidden;
 }
 
@@ -219,6 +230,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 @media (max-width: 40em) {
+  .sm-hide { display: none }
+
   .header {
     margin-top: 20vh;
     margin-bottom: 3rem;
@@ -262,6 +275,10 @@ h1, h2, h3, h4, h5, p {
     max-width: 100%;
   }
 
+  .devices {
+    left: 22.5rem;
+  }
+
   .sm-mt2 { margin-top: 2rem }
 }
 
@@ -288,13 +305,13 @@ h1, h2, h3, h4, h5, p {
   .skewy {
     -webkit-transform: skewY(1deg);
     -ms-transform: skewY(1deg);
-    transform: skewY(1deg);
+        transform: skewY(1deg);
   }
 
   .skewyn {
     -webkit-transform: skewY(-1deg);
     -ms-transform: skewY(-1deg);
-    transform: skewY(-1deg);
+        transform: skewY(-1deg);
   }
 
   .pb-last {
@@ -305,6 +322,10 @@ h1, h2, h3, h4, h5, p {
 @media (min-width: 52em) {
   .md-half.header-half {
     width: 26rem;
+  }
+
+  .devices {
+    left: 32rem;
   }
 
   .pb-last {
@@ -326,6 +347,10 @@ h1, h2, h3, h4, h5, p {
 
   .header {
     margin-top: 21vh;
+  }
+
+  .devices {
+    left: 38rem;
   }
 
   .pb-last {
