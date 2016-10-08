@@ -329,6 +329,6 @@ h1, h2, h3, h4, h5, p {
   }
 
   .pb-last {
-    margin-bottom: 37vh;
+    padding-bottom: 37vh;
   }
 }
