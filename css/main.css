@@ -227,73 +227,35 @@ h1, h2, h3, h4, h5, p {
 
 @-webkit-keyframes pattern {
   0% {
-    -webkit-transform: translateY(-21rem);
-    transform: translateY(-21rem);
-    opacity: 0.1;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 1;
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
   }
 
   50% {
-    -webkit-transform: translateY(9rem);
-    transform: translateY(9rem);
-    opacity: 0.1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   100% {
-    -webkit-transform: translateY(-21rem);
-    transform: translateY(-21rem);
-    opacity: 0.1;
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
   }
 }
 
 @keyframes pattern {
   0% {
-    -webkit-transform: translateY(-21rem);
-    transform: translateY(-21rem);
-    opacity: 0.1;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 1;
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
   }
 
   50% {
-    -webkit-transform: translateY(9rem);
-    transform: translateY(9rem);
-    opacity: 0.1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   100% {
-    -webkit-transform: translateY(-21rem);
-    transform: translateY(-21rem);
-    opacity: 0.1;
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
   }
 }
 
@@ -305,8 +267,8 @@ h1, h2, h3, h4, h5, p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-animation-name: pattern;
   animation-name: pattern;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   -webkit-animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
