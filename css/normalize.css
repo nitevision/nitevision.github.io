@@ -1,11 +1,9 @@
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/*  till main
+/* Document
    ========================================================================== */
 
 html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
@@ -384,7 +382,7 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
 [type="search"]::-webkit-search-cancel-button,
@@ -452,4 +450,3 @@ template {
 [hidden] {
   display: none;
 }
-
