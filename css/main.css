@@ -1,5 +1,5 @@
 html {
-  background-color: #151519;
+  background-color: #111111;
   color: #fffdf7;
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
@@ -129,12 +129,12 @@ h1, h2, h3, h4, h5, p {
 }
 
 .type-grey {
-  color: #151519;
+  color: #111111;
   -webkit-font-smoothing: antialiased;
 }
 
 .type-dark {
-  color: #151519;
+  color: #111111;
   opacity: 0.8;
   -webkit-font-smoothing: antialiased;
 }
