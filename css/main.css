@@ -115,7 +115,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 .type-light {
-  font-weight: 700;
   opacity: 0.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -126,6 +125,7 @@ h1, h2, h3, h4, h5, p {
   letter-spacing: 1px;
   opacity: 0.4;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 .type-grey {
@@ -145,6 +145,7 @@ h1, h2, h3, h4, h5, p {
 
 .type-dashed {
   margin-top: 0.75rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 .type-dashed:not(:last-of-type) {
