@@ -259,6 +259,40 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+@-webkit-keyframes pattern-rev {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes pattern-rev {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .pattern {
   vertical-align: middle;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -267,10 +301,10 @@ h1, h2, h3, h4, h5, p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-animation-name: pattern;
   animation-name: pattern;
-  -webkit-animation-duration: 15s;
-  animation-duration: 15s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-duration: 14s;
+  animation-duration: 14s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   -webkit-animation-iteration-count: infinite;
@@ -279,6 +313,11 @@ h1, h2, h3, h4, h5, p {
   animation-fill-mode: both;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+}
+
+.pattern-2 {
+  -webkit-animation-name: pattern-rev;
+  animation-name: pattern-rev;
 }
 
 @media (max-width: 40em) {
