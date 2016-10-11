@@ -227,8 +227,8 @@ h1, h2, h3, h4, h5, p {
 
 @-webkit-keyframes pattern {
   0% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 
   50% {
@@ -237,15 +237,15 @@ h1, h2, h3, h4, h5, p {
   }
 
   100% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 }
 
 @keyframes pattern {
   0% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 
   50% {
@@ -254,8 +254,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   100% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 }
 
@@ -266,8 +266,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   50% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 
   100% {
@@ -283,8 +283,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   50% {
-    -webkit-transform: translateY(-2rem);
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
 
   100% {
