@@ -227,8 +227,8 @@ h1, h2, h3, h4, h5, p {
 
 @-webkit-keyframes pattern {
   0% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 
   50% {
@@ -237,15 +237,15 @@ h1, h2, h3, h4, h5, p {
   }
 
   100% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 }
 
 @keyframes pattern {
   0% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 
   50% {
@@ -254,8 +254,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   100% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 }
 
@@ -266,8 +266,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   50% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 
   100% {
@@ -283,8 +283,8 @@ h1, h2, h3, h4, h5, p {
   }
 
   50% {
-    -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-0.25rem);
+    transform: translateY(-0.25rem);
   }
 
   100% {
@@ -301,8 +301,8 @@ h1, h2, h3, h4, h5, p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-animation-name: pattern;
   animation-name: pattern;
-  -webkit-animation-duration: 14s;
-  animation-duration: 14s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   -webkit-animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -318,6 +318,8 @@ h1, h2, h3, h4, h5, p {
 .pattern-2 {
   -webkit-animation-name: pattern-rev;
   animation-name: pattern-rev;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 @media (max-width: 40em) {
